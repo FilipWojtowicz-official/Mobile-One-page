@@ -11,10 +11,10 @@ a {
   font-weight: 400;
 }
 .container {
-  width: 576px;
+  width: 92%;
   margin: 0 auto;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .container {
     width: 960px;
   }
@@ -37,6 +37,15 @@ a {
 
 .horizaontal-view {
   display: flex;
+}
+
+.menu-list {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .menu-list {
+    display: flex;
+  }
 }
 
 .li-navigation {
@@ -66,10 +75,9 @@ a {
 .heading {
   font-weight: 700;
   font-size: 36px;
-  padding-right: 200px;
   color: #ffffff;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .heading {
     padding-right: 350px;
   }
@@ -93,12 +101,12 @@ a {
   color: #ffffff;
   border: 3px solid #ffffff;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .offer-btn {
     transition: 1s;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .offer-btn:hover {
     background: white;
     color: black;
@@ -111,7 +119,6 @@ a {
 
 .employee-section {
   background-color: white;
-  height: calc(100vh - 50px);
 }
 .our-specialists {
   height: 35px;
@@ -123,7 +130,7 @@ a {
 
   color: #152d41;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .our-specialists {
     text-align: initial;
   }
@@ -131,13 +138,21 @@ a {
 
 .employee {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 104px;
+  margin-top: 50px;
+  gap: 50px;
 }
-
-.employee:nth-of-type(even) {
-  flex-direction: row-reverse;
-  text-align: right;
+@media screen and (min-width: 991px) {
+  .employee {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 991px) {
+  .employee:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
 }
 
 .employee-photo {
@@ -147,18 +162,14 @@ a {
   object-fit: cover;
 }
 
-.employee:nth-of-type(odd) .employee-photo {
-  margin-right: 50px;
-}
-
-.employee:nth-of-type(even) .employee-photo {
-  margin-left: 50px;
-}
-
 .employee-description {
-  width: 70%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 991px) {
+  .employee-description {
+    width: 70%;
+  }
 }
 
 .name {
@@ -176,11 +187,10 @@ a {
 
 .offer-section {
   background-color: #405d78;
-  height: 3500px;
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .offer-section {
     height: calc(100vh - 150px);
     display: block;
@@ -194,7 +204,7 @@ a {
   margin-bottom: 80px;
   text-align: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .offer-text {
     text-align: initial;
   }
@@ -209,8 +219,8 @@ a {
 }
 
 .box {
-  width: 500px;
-  height: 500px;
+  width: 80%;
+  aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,14 +229,13 @@ a {
   position: relative;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .box {
     width: 198px;
-    height: 198px;
     transition: all 0.5s;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .box:hover {
     transform: scale(1.05);
   }
@@ -241,7 +250,7 @@ a {
   color: #000000;
   margin-top: 3px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .new {
     font-size: 18px;
   }
@@ -258,7 +267,7 @@ a {
   top: -25px;
   border-radius: 50%;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
   .box.with-dot::before {
     width: 22px;
     height: 22px;
@@ -268,7 +277,7 @@ a {
 }
 
 .footer {
-  height: 72px;
+  height: 90px;
   background: #4e4e4e;
   display: flex;
   align-items: center;
@@ -278,16 +287,28 @@ a {
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 991px) {
+  .footer-text {
+    margin-bottom: 0px;
+  }
 }
 
 .icons {
   margin-left: 20px;
   color: #ffffff;
 }
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-}
+
 .footer-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 991px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
