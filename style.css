@@ -157,29 +157,29 @@ a {
 
 .employee-photo {
   border-radius: 50%;
-  min-width: 197px;
   height: 197px;
   object-fit: cover;
+  aspect-ratio: 1;
 }
 
-.employee-description {
+.employee-details {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 991px) {
-  .employee-description {
+  .employee-details {
     width: 70%;
   }
 }
 
-.name {
+.employee-details-name {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 30px;
   color: #000000;
 }
 
-.description {
+.employee-details-description {
   font-weight: 400;
   font-size: 18px;
   color: #000000;
@@ -192,7 +192,6 @@ a {
 }
 @media screen and (min-width: 991px) {
   .offer-section {
-    height: calc(100vh - 150px);
     display: block;
   }
 }
@@ -277,10 +276,17 @@ a {
 }
 
 .footer {
-  height: 90px;
+  height: 120px;
   background: #4e4e4e;
   display: flex;
   align-items: center;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 991px) {
+  .footer {
+    height: 90px;
+    padding-bottom: 0px;
+  }
 }
 
 .footer-text {
