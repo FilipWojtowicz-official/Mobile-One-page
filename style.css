@@ -77,16 +77,20 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
 .heading {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 100px;
   color: #ffffff;
 }
-@media screen and (min-width: 361px) {
+
+@media screen and (min-width: 400px) {
   .heading {
-    font-size: 40px;
+    padding-right: 250px;
+    font-size: 50px;
   }
 }
+
 @media screen and (min-width: 991px) {
   .heading {
     padding-right: 350px;
