@@ -80,17 +80,15 @@ a {
 
 .heading {
   font-weight: 700;
-  font-size: 100px;
+  font-size: 80px;
   color: #ffffff;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
   .heading {
-    padding-right: 250px;
-    font-size: 50px;
+    font-size: 45px;
   }
 }
-
 @media screen and (min-width: 991px) {
   .heading {
     padding-right: 350px;
@@ -100,11 +98,26 @@ a {
 
 .text-header {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
   color: #ffffff;
-  margin-top: 62.19px;
-  margin-bottom: 42.84px;
+  margin-top: 57px;
+  margin-bottom: 45px;
 }
+
+@media screen and (min-width: 360px) {
+  .text-header {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .text-header {
+    font-size: 18px;
+  }
+}
+
 .offer-btn {
   display: flex;
   justify-content: center;
