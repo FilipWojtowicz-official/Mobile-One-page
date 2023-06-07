@@ -57,13 +57,13 @@ a {
 
 .header {
   height: calc(100vh - 50px);
-  background-image: url(assets/header.background.png);
+  background-image: url(assets/header.background-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 991px) {
   .header {
-    background-image: url(assets/header.background-mobile.png);
+    background-image: url(assets/header.background.png);
   }
 }
 
