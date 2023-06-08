@@ -14,9 +14,15 @@ a {
   width: 92%;
   margin: 0 auto;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 960px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .container {
+    width: 900px;
   }
 }
 
@@ -42,7 +48,7 @@ a {
 .menu-list {
   display: none;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .menu-list {
     display: flex;
   }
@@ -61,7 +67,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .header {
     background-image: url(assets/header.background.png);
   }
@@ -86,13 +92,19 @@ a {
 
 @media screen and (min-width: 360px) {
   .heading {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .heading {
-    padding-right: 350px;
+    padding-right: 250px;
     font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .heading {
+    padding-right: 300px;
   }
 }
 
@@ -106,13 +118,13 @@ a {
 
 @media screen and (min-width: 360px) {
   .text-header {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 60px;
     margin-bottom: 55px;
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .text-header {
     font-size: 18px;
   }
@@ -129,12 +141,12 @@ a {
   color: #ffffff;
   border: 3px solid #ffffff;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .offer-btn {
     transition: 1s;
   }
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .offer-btn:hover {
     background: white;
     color: black;
@@ -158,7 +170,7 @@ a {
 
   color: #152d41;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .our-specialists {
     text-align: initial;
   }
@@ -171,12 +183,12 @@ a {
   margin-top: 50px;
   gap: 50px;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .employee {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .employee:nth-of-type(even) {
     flex-direction: row-reverse;
     text-align: right;
@@ -194,7 +206,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .employee-details {
     width: 70%;
   }
@@ -218,7 +230,7 @@ a {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .offer-section {
     display: block;
   }
@@ -231,7 +243,7 @@ a {
   margin-bottom: 80px;
   text-align: center;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .offer-text {
     text-align: initial;
   }
@@ -256,13 +268,13 @@ a {
   position: relative;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .box {
     width: 198px;
     transition: all 0.5s;
   }
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .box:hover {
     transform: scale(1.05);
   }
@@ -277,7 +289,7 @@ a {
   color: #000000;
   margin-top: 3px;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .new {
     font-size: 18px;
   }
@@ -294,7 +306,7 @@ a {
   top: -25px;
   border-radius: 50%;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .box.with-dot::before {
     width: 22px;
     height: 22px;
@@ -310,7 +322,7 @@ a {
   align-items: center;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .footer {
     height: 90px;
     padding-bottom: 0px;
@@ -323,7 +335,7 @@ a {
   color: #ffffff;
   margin-bottom: 15px;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .footer-text {
     margin-bottom: 0px;
   }
@@ -340,7 +352,7 @@ a {
   align-items: center;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
